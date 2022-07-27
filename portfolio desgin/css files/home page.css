@@ -46,18 +46,18 @@
     position: relative;
     margin-left: 29.9%;
     height: 100%;
-    align-items: center;
 }
 
 .profile-pic{
     position: absolute;
-    right: 0px;
+    top: 7%;
+    left: 3%;
     width: 94.28%;
 }
 
 .white-box{
     position: absolute;
-    top: 5.54%;
+    top: 12%;
     left: 0px;
     width: 98.6%;
 }
