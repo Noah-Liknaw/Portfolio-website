@@ -152,3 +152,65 @@ a{
 .contact-link:hover{
     border: 2px solid black;
 }
+@media (max-width: 1090px) {
+    .white-box{
+        display: none;
+    }
+    .profile-pic{
+        display: none;
+    }
+    .background-svg{
+        display: none;
+    }
+    .profile-pic-section{
+        background-color: black;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .container{
+        outline: 1px red solid;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .home-menu,.user-menu,.projects-menu,.contact-menu{
+        display: none;
+    }
+    
+
+    .container > *:nth-child(1){
+        flex-basis: 10%;
+    }
+    
+    .container > *:nth-child(2){
+        flex-basis: 45%;
+    }
+    
+    .container > *:nth-child(3){
+        flex-basis: 45%;
+    }
+
+    /* Menu section */
+    .menu-bar{
+        box-sizing: border-box;
+        padding: 45px 0px;
+    }
+
+    .profile-pic-section{
+        margin: 0px 7.8% 0px 7.8%;
+        outline: 1px solid red;
+
+    }
+
+    .description-section{
+        margin: 0px 7.8% 0px 7.8%;
+        outline: 1px solid red;
+
+    }
+
+    .name{
+        font-size: 20;
+    }
+}
