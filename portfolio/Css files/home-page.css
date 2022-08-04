@@ -111,13 +111,14 @@ a{
 }
 
 /* Footer section */
-.footer-section{
-}
-
 .footer-container{
     display: flex;
     justify-content: center;
     gap: 2rem;
+}
+
+.footer-pc-section{
+    display: none;
 }
 
 @media (min-width: 700px) {
@@ -214,6 +215,22 @@ a{
 
     .job{
         font-size: 1.5rem;
+    }
+
+    /* Footer section */
+    .footer-pc-section{
+        display: flex;
+        background-color: white;
+        justify-content: center;
+    }
+    
+    .footer-pc-container{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .footer-icon{
+        color: black;
     }
 
 }
