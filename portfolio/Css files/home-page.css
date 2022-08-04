@@ -1,0 +1,219 @@
+*,*::after,*::before{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    color: white;
+}
+
+
+.main-container{
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding-left: 11.7%;
+    padding-right: 11.7%;
+}
+
+.main-container > *{
+}
+
+.main-container > *:nth-child(1){
+    flex-basis: 10vh;
+}
+
+.main-container > *:nth-child(2){
+    display: none;
+}
+
+.main-container > *:nth-child(3){
+    flex-basis: 81.89vh;
+}
+
+.main-container > *:nth-child(4){
+    flex-basis: 8.11vh;
+}
+
+/* Menu section */
+.menu-section{
+    display: flex;
+    align-items: flex-end;
+    justify-content: right;
+}
+
+.menu-container{
+    text-align: right;
+    display: absolute;
+}
+
+.hamburger{
+    width: 19%;
+}
+
+.nav-icon{
+    display: none;
+}
+
+/* Description section */
+.description-section{
+    display: flex;
+    flex-direction: column;
+    padding-top: 24.33vh;
+
+}
+
+.description-container{
+    display: flex;
+}
+
+.description-container > *{
+}
+
+.description-container > *:nth-child(1){
+    flex-basis: 7.98%;
+}
+
+.description-container > *:nth-child(2){
+    flex-basis: 92.02%;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description > *{
+    color: white;
+}
+
+.name{
+    padding-bottom: 3.379vh;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8.88888vw;    
+}
+
+.job{
+    padding-bottom: 0.946vh;
+    font-family: 'Lora';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 6.1111vw;
+}
+
+.underline{
+    display: flex;
+}
+
+/* Footer section */
+.footer-section{
+}
+
+.footer-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media (min-width: 700px) {
+    .main-container{
+        flex-direction: row;
+        height: 100vh;
+        padding: initial;
+    }
+
+    /* Profile pic section */
+    .profile-pic-section{
+        display: initial;
+        color: white;
+    }
+
+    .main-container > *:nth-child(1){
+        flex-basis: 7.3567vw;
+    }
+    
+    .main-container > *:nth-child(2){
+        display: flex;
+        flex-basis: 42.5vw;
+    }
+    
+    .main-container > *:nth-child(3){
+        flex-basis: 50.2433vw;
+    }
+    
+    .main-container > *:nth-child(4){
+        display: none;
+    }
+
+    /* Menu section */
+    .menu-section{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-container{
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .hamburger{
+        display: none;
+    }
+    .nav-icon{
+        display: initial;
+    }
+
+    /* Profile pic section */
+    .profile-pic-section{
+        align-items: center;
+        justify-content: end;
+    }
+
+    .profile-pic-container{
+        width: 30.01302vw;
+        /* height: 426px; */
+        height: 27.74vw;
+        background-color: white;
+        position: relative;
+    }
+
+    .profile-pic{
+        width: 95.7%;
+        position: absolute;
+        right: 0px;
+        bottom: 4.5%;
+    }
+
+    /* Description section */
+    .description-section{
+        padding-top: initial;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .description > *{
+        color: black;
+    }
+
+    .grey-line{
+        text-align: right;
+        margin-right: 1.5rem;
+    }
+
+    .name{
+        font-size: 3.658rem;
+        padding-bottom: 1.6vh;
+    }
+
+    .job{
+        font-size: 1.5rem;
+    }
+
+}
